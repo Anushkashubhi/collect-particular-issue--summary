@@ -4,7 +4,7 @@ import groovy.json.JsonSlurper
 collectissuesummary(String data){
 def jsonSlurper = new JsonSlurper() 
 def resultJson = jsonSlurper.parseText(data)
-def issueName = resultJson.key
+def issueName = resultJson.Key
 echo "$issueName"
  httpRequest authentication: 'jira_password',
   customHeaders: [[maskValue: false, name: 'Accept', value: 'application/json']], 
