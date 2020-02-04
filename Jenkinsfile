@@ -2,9 +2,9 @@
 pipeline{
 agent any 
 stages{
-  stage('collect-issue-summary'){
+  stage('collect issue summary'){
             steps {
-               collect-issue-summary()
+               collectissuesummary()
             }
       
         }
