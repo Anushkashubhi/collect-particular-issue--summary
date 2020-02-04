@@ -2,7 +2,7 @@ pipeline{
 agent any
 stages{
 
-stage('Jenkins job'){
+stage('Collect Issue Summary'){
 steps{
  
 sh '''
