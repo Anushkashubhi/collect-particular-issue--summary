@@ -6,7 +6,7 @@ agent any
 stages{
   stage('Collect Issue Summary'){
             steps {
-               jira-issue-summary-collector()
+               collect-particular-issue-summary()
             }
       
         }
