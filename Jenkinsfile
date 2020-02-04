@@ -6,7 +6,7 @@ agent any
 stages{
   stage('Collect Issue Summary'){
             steps {
-               collect-particular-issue-summary()
+               collectissuesummary()
             }
       
         }
