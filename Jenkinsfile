@@ -1,4 +1,4 @@
-@Library('jira9')_
+//@Library('jira9')_
 pipeline{
 agent any 
 stages{
