@@ -1,6 +1,6 @@
 pipeline{
 libraries{
-lib 'shlib5'
+lib 'shlib10'
          }
 agent any
 stages{
