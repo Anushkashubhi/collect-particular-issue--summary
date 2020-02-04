@@ -1,7 +1,7 @@
 import groovy.json.JsonSlurper 
 
 @NonCPS
-collect-issue-summary(String data){
+collectissuesummary(String data){
 def jsonSlurper = new JsonSlurper() 
 def resultJson = jsonSlurper.parseText(data)
 def issueName = resultJson.key
@@ -14,5 +14,5 @@ echo "$issueName"
 }
 def call(){
  def request = libraryResource 'data.json'
- collect-issue-summary(request)
+ collectissuesummary(request)
 }
